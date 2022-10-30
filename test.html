@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .img-cont-hiw {
+        position: relative;
+        z-index: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img-hiw {
+        width: 40%;
+        z-index: 500;
+      }
+      img::after {
+        content: "";
+        display: inline-block;
+        width: 150%;
+        height: 150%;
+        background-color: #554994;
+        border-radius: 50%;
+        opacity: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -10;
+      }
+      .img-hiw::before {
+        content: "";
+        display: inline-block;
+        width: 60%;
+        height: 70%;
+        background-color: #fdf2e9;
+        border-radius: 50%;
+        opacity: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -5;
+        opacity: 40%;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-cont-hiw">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+          voluptatem molestias consectetur? Assumenda veniam sint, dolor ab rem
+          dicta adipisci reiciendis culpa! Rem et, ullam commodi saepe nihil
+          nobis odit.
+        </p>
+      </div>
+      <div class="img-cont-hiw">
+        <img
+          class="img-hiw"
+          src="img/app/
+        app-screen-1.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
